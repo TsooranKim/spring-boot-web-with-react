@@ -1,0 +1,22 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Server Debug",
+      "type": "java",
+      "request": "launch",
+      "mainClass": "org.example.back.Application",
+      "console": "internalConsole",
+      "internalConsoleOptions": "openOnFirstSessionStart",
+      "cwd": "${workspaceFolder}/back",
+      "args": "--spring.profiles.active=dev,local"
+    },
+    {
+      "name": "Launch Chrome",
+      "type": "chrome",
+      "request": "launch",
+      "url": "http://localhost:3000",
+      "webRoot": "${workspaceFolder}/front/src"
+    }
+  ]
+}
