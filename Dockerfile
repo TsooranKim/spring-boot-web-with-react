@@ -6,6 +6,7 @@ WORKDIR /app
 COPY ./front .
 
 RUN pnpm install
+RUN pnpm run build
 
 FROM openjdk:17 AS java-builder
 
